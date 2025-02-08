@@ -1,0 +1,14 @@
+
+import { createClient } from '@supabase/supabase-js';
+
+
+const SUPABASE_URL = "https://dwcjroqiazgwtkvcemve.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR3Y2pyb3FpYXpnd3RrdmNlbXZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU0NzUxNDQsImV4cCI6MjA1MTA1MTE0NH0.M6TwE2rHnsTEyLgnFwLrA7Fu1Wj0ZPJCrfAc4xyH2xo";
+
+const SUPABASE_SERVICE_ROLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR3Y2pyb3FpYXpnd3RrdmNlbXZlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNTQ3NTE0NCwiZXhwIjoyMDUxMDUxMTQ0fQ.pIi6VO-2ef0xVvt0rXB6o4KdwbjKbA50aXQJA7NFCqw"; 
+
+
+
+export const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+export const supabaseAdmin = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY)
