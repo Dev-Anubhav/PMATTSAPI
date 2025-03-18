@@ -2,7 +2,11 @@
   "name": "y",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "author": "",
@@ -14,9 +18,15 @@
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
+    "deno": "^2.2.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "firebase-admin": "^13.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "otp-generator": "^4.0.1",
     "payu-websdk": "^1.2.0",
+    "resend": "^4.1.2",
+    "sib-api-v3-sdk": "^8.5.0",
     "uuid": "^11.0.5"
   },
   "devDependencies": {

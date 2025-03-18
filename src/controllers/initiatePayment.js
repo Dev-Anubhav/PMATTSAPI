@@ -23,8 +23,8 @@ exports.initiatePayment = async (req, res) => {
             firstname,
             email,
             phone,
-            surl: `${baseUrl}${port}/payment/verify/${txnid}`,
-            furl: `${baseUrl}${port}/payment/verify/${txnid}`,
+            surl: `${baseUrl}/payment/verify/${txnid}`,
+            furl: `${baseUrl}/payment/verify/${txnid}`,
             hash
         });
 
